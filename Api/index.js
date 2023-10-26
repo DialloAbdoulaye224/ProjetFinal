@@ -31,6 +31,6 @@ mongoose.connect(
       console.log("Serveur fonctionnant sur le port 8000");
     });
     
-    // const User = require("./models/user");
-    // const Message = require("./models/message");
+    const User = require("./Models/user");
+    const Message = require("./Models/message");
     
