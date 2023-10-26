@@ -6,60 +6,29 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-
-} from 'react-native/Libraries/NewAppScreen';
+//import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import StackNavigator from "./StackNavigator";
 
 
 
-
-
-function App(){
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+export default function App () {
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <Text>App massagerie</Text>
-    </SafeAreaView>
+    <>
+      
+        <StackNavigator />
+      
+    </>
   );
 }
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    flex:1,
-    marginTop: 32,
-    paddingHorizontal: 24,
-    justifyContent: 'center',
-    alignItems:'center'
-
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 
-export default App;
+
